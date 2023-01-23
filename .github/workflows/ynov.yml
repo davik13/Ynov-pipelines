@@ -32,10 +32,10 @@ jobs:
         pip install flake8 black
 
     - name: lint with flake8
-      run: flake8 .bottle.py
+      run: flake8 .
 
     - name: lint with black
-      run: black --check .bottle.py
+      run: black . --check 
 
 
   
