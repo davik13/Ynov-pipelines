@@ -44,7 +44,7 @@ jobs:
 
       - name: Test with Pytest
         run: |
-          pytest --doctest-modules --ignore=hello.py
+          pytest --doctest-modules --ignore=bottle.py
 
   deploy:
     runs-on: ubuntu-latest
