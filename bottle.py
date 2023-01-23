@@ -2,8 +2,6 @@ from bottle import route, run, template
 from calcul import calcul
 
 
-
-
 @route('/')
 def homepage():
     return 'Hello you !'
