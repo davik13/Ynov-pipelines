@@ -13,8 +13,10 @@ def index(name):
 
 
 @route('/add/<a>/<b>')
+@route('/add/<a:int>/<b:int>/')
 def add(a, b):
     return {'result': calcul(a, b)}
+    
 
-
-run(host='localhost', port=8080, debug=True, reloader=True)
+if __name__ == "__main__":
+    run(host="localhost", port=8080, reloader=True)
