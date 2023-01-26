@@ -12,11 +12,10 @@ def homepage():
     return "<b>Hello you</b>!"
 
 
-@route("/add/<a>/<b>")
+
 @route("/add/<a>/<b>/")
 def route_add(a, b):
     return {"result": add(a, b)}
 
 
-if __name__ == "__main__":
-    run(host="localhost", port=8080, reloader=True)
+ run(host="localhost", port=8080, reloader=True)
