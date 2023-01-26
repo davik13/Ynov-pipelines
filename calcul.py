@@ -1,8 +1,11 @@
-def calcul(a, b):
+def add(a, b):
     """
-    >>> calcul(1, 2)
-    '3'
-    >>> calcul(2, 3)
-    '5'
+    This function return the sum of a + b
+
+    >>> add(2, 3)
+    5
+    >>> add(3, 3)
+    6
     """
-    return str(a + b)
+
+    return int(a) + int(b)
