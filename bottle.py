@@ -13,7 +13,7 @@ def index(name):
 
 
 @route('/add/<a>/<b>')
-def add(a, b):
+def route_add(a, b):
     return {'result': add(a, b)}
 
 
