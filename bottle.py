@@ -2,20 +2,19 @@ from bottle import route, run, template
 from calcul import add
 
 
-@route("/hello/<name>")
-def index(name):
-    return template("<b>Hello {{name}}</b>!", name=name)
-
-
-@route("/")
+@route('/')
 def homepage():
-    return "<b>Hello you</b>!"
+    return 'Hello you !'
 
 
+@route('/hello/<name>')
+def index(name):
+    return template('<b>Hello {{name}}</b>!', name=name)
 
-@route("/add/<a>/<b>/")
-def route_add(a, b):
-    return {"result": add(a, b)}
+
+@route('/add/<a>/<b>')
+def add(a, b):
+    return {'result': add(a, b)}
 
 
- run(host="localhost", port=8080, reloader=True)
+run(host='localhost', port=8080, debug=True, reloader=True)
